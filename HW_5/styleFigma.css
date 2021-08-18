@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0;
+  color: white;
+}
+body {
+  background: url(./img/header-bg.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  max-width: 1440px;
+  max-height: 800px;
+}
+.navigation__wrapper {
+  display: flex;
+  align-items: center;
+}
+.logoVector {
+  margin-top: 25px;
+}
+.nav__one {
+  width: 530px;
+  height: 50px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav__two {
+  width: 530px;
+  height: 50px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+.flex {
+  display: flex;
+}
+.nav {
+  text-decoration: none;
+  color: white;
+  font-family: Open Sans;
+  font-weight: 600;
+  font-size: 14px;
+}
+.contain__wrapper {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-around;
+  margin-top: 150px;
+}
+.restoran_info {
+  width: 1000px;
+  height: 235px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.working_hours {
+  writing-mode: vertical-rl;
+  transform: rotate(-180deg);
+  width: 60px;
+  margin: 0;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 12px;
+}
+.restaurant {
+  font-family: Open Sans;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 14px;
+}
+.title {
+  font-family: Banny;
+  font-size: 96px;
+}
+.sociali {
+  margin: 0;
+}
+.sociali__list {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  text-align: center;
+  padding-top: 13px;
+  margin-top: 20px;
+}
+.sociali__list img {
+  width: 30px;
+  height: 30px;
+  margin: 0;
+}
+.rectangle_2 {
+  width: 60px;
+  height: 5px;
+  padding: 2.5px;
+  background: #e8c300;
+  border-radius: 50px;
+}
+.btn_book {
+  width: 200px;
+  height: 60px;
+  background: #e8c300;
+  border: 1px solid #e8c300;
+  border-radius: 5px;
+  outline: none;  
+  margin:  30px;
+}
+.btn_book:hover{
+    background: #a38905;
+    border: 1px solid #a38905;
+    cursor: pointer;
+}
+.btn_explore {
+    width: 200px;
+  height: 60px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: none;
+  box-sizing: border-box;
+  border-radius: 5px;
+  outline: none;
+  margin:  30px;
+  cursor: pointer;
+}
+.btn_explore:hover{
+    border: 1px solid #a38905;
+}
+.outside{
+    cursor: pointer;
+    margin-top: 150px;
+    width: 60px;
+    height: 60px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    background: none;
+    display: flex;
+    align-items: center;
+
+}
+.inside{
+    text-decoration: none;
+    display: flex;
+    align-items: center;    
+    width: 40px;
+    height:40px;
+    background: white;
+    border-radius: 50%;
+}
+.outside .inside:hover{
+    background: rgb(170, 170, 170);
+}
