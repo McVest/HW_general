@@ -1,0 +1,110 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  list-style-type: none;
+}
+body {
+  margin: 0 auto;
+  background: hsl(216deg 8% 25%);
+}
+.title__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: hsl(215deg 7% 31%);
+  color: hsl(359deg 73% 71%);
+}
+.title {
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+.title__info {
+  margin: 0;
+  padding: 10px 0 20px 0;
+  font-size: 24px;
+}
+
+/* list */
+.list {
+  padding: 20px;
+}
+.list__wrapper {
+  margin: 0 auto;
+  width: 800px;
+  background: hsl(251deg 12% 57%);
+}
+.list_container {
+  position: relative;
+  cursor: pointer;
+  color: white;
+}
+.container {
+  display: block;
+  padding: 10px 0 10px 40px;
+}
+input[type="checkbox"] {
+  position: absolute;
+  height: 0;
+  width: 0;
+  opacity: 0;
+}
+.checkmark {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 10px;
+  left: 10px;
+  background-color: hsl(0deg 0% 87%);
+  border: 1px solid hsl(0deg 0% 69%);
+}
+.container:hover {
+  background-color: hsl(250deg 12% 42%);
+  border-top: 3px solid white;
+  border-bottom: 3px solid white;
+  padding: 7px 0 7px 40px;
+}
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+input[type="checkbox"]:checked ~ .checkmark:after {
+  display: block;
+  text-decoration: line-through;
+}
+input[type="checkbox"]:checked ~ .container {
+  /* display: block; */
+  text-decoration: line-through;
+  background: hsl(250deg 12% 52%);
+  color: hsl(249deg 12% 67%);
+}
+.list_container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: 2px solid hsl(0deg 0% 26%);
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+/* footer */
+.btn{
+    margin: 0 auto;
+    width: 600px;
+}
+.btn_sub{
+    display: block;
+    width: 600px;
+    color: hsl(6deg 75% 68%);
+    height: 40px;
+    background: hsl(215deg 7% 31%);
+    text-decoration: none;
+    text-align: center;
+    padding: 10px 0;
+    box-shadow: 5px 5px 13px 0px rgba(7, 7, 7, 0.26);
+}
+.btn_sub:active{
+    box-shadow:  5px 5px 5px 0px rgba(7, 7, 7, 0.26) inset;
+}
