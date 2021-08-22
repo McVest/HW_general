@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif !important;
+  color: white;
+}
+body {
+  background: hsl(200deg 60% 50%);
+  border: 20px solid hsl(200deg 60% 42%);
+  width: 100%;
+  height: 100vh;
+}
+.header {
+  max-width: 1170px;
+  margin: 30px auto;
+}
+.weather {
+  margin: 0 auto;
+  max-width: 1170px;
+  text-align: center;
+  border: 2px solid white;
+}
+.weather_block {
+  height: 126px;
+  padding: 30px;
+}
+.celsius {
+  color: #ffefce;
+  font-size: 24px;
+}
+ul {
+  font-size: 0;
+}
+li {
+  display: inline-block;
+  font-size: 18px;
+  border: 2px solid white;
+  height: 130px;
+}
+.title::after {
+  font-family: "weathericons";
+  content: "\f051";
+  margin-left: 15px;
+}
+.sunny::after {
+  font-family: "weathericons";
+  content: "\f00d";
+  margin-left: 5px;
+}
+.sleet::after {
+  font-family: "weathericons";
+  content: "\f0b2";
+  margin-left: 5px;
+}
+.day_cloudy::after {
+  font-family: "weathericons";
+  content: "\f002";
+  margin-left: 5px;
+}
+.day_cloudy_high::after {
+  font-family: "weathericons";
+  content: "\f07d";
+  margin-left: 5px;
+}
+.hot::after {
+  font-family: "weathericons";
+  content: "\f072";
+  margin-left: 5px;
+}
+.day_storm_showers::after {
+  font-family: "weathericons";
+  content: "\f00e";
+  margin-left: 5px;
+}
+.rain_wind::after {
+  font-family: "weathericons";
+  content: "\f018";
+  margin-left: 5px;
+}
+.night_clear::after {
+  font-family: "weathericons";
+  content: "\f02e";
+  margin-left: 5px;
+}
+.night_cloudy::after {
+  font-family: "weathericons";
+  content: "\f031";
+  margin-left: 5px;
+}
+
+.lisbon_bl {
+  width: 50%;
+  /* background: #3399cc; */
+}
+.paris_bl {
+  width: 25%;
+  /* background: #33cccc; */
+}
+.belgrade_bl {
+  width: 25%;
+  /* background: #996699; */
+}
+.moscow_bl {
+  width: 25%;
+  /* background: #c24747; */
+}
+.aviv_bl {
+  width: 25%;
+  /* background: #e2674a; */
+}
+.cair_bl {
+  width: 25%;
+  /* background: #ffcc66; */
+}
+.new_york_bl {
+  width: 25%;
+  /* background: #99cc99; */
+}
+.new_delhi_bl {
+  width: 25%;
+  /* background: #669999; */
+}
+.san_Francisco_bl {
+  width: 50%;
+  /* background: #cc6699; */
+}
+.tokyo_bl {
+  width: 25%;
+  /* background: #339966; */
+}
+.sydney_bl {
+  width: 100%;
+  /* background: #666699; */
+}
+.lisbon {
+  background: #3399cc;
+}
+.paris {
+  background: #33cccc;
+}
+.belgrade {
+  background: #996699;
+}
+.moscow {
+  background: #c24747;
+}
+.aviv {
+  background: #e2674a;
+}
+.cair {
+  background: #ffcc66;
+}
+.new_york {
+  background: #99cc99;
+}
+.new_delhi {
+  background: #669999;
+}
+.san_Francisco {
+  background: #cc6699;
+}
+.tokyo {
+  background: #339966;
+}
+.sydney {
+  background: #666699;
+}
+.weather:hover .weather_block {
+  opacity: 0.5;
+}
+.lisbon:hover {
+  opacity: 1 !important;
+}
+.paris:hover {
+  opacity: 1 !important;
+}
+.belgrade:hover {
+  opacity: 1 !important;
+}
+.moscow:hover {
+  opacity: 1 !important;
+}
+.aviv:hover {
+  opacity: 1 !important;
+}
+.cair:hover {
+  opacity: 1 !important;
+}
+.new_york:hover {
+  opacity: 1 !important;
+}
+.new_delhi:hover {
+  opacity: 1 !important;
+}
+.san_Francisco:hover {
+  opacity: 1 !important;
+}
+.tokyo:hover {
+  opacity: 1 !important;
+}
+.sydney:hover {
+  opacity: 1 !important;
+}
+.footer {
+  max-width: 1170px;
+  margin: 30px auto;
+}
+.ahref {
+  text-decoration: none;
+  font-size: 24px;
+}
