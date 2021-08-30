@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'ProximaNovaRegular';
+  src: url(./fonts/ProximaNovaRegular.otf);
+}
+@font-face {
+  font-family: 'GeorgiaRegularfont';
+  src: url(./fonts/GeorgiaRegularfont.ttf);
+}
+@font-face {
+  font-family:'georgiaitalic' ;
+  src: url(./fonts/georgiaitalic.ttf);
+}
+@font-face {
+  font-family:'futura_pt_heavy' ;
+  src: url(./fonts/futura-pt-heavy.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+body{
+  background: #3c464b;
+}
+.book{
+  width: 1070px;
+  margin: 200px auto 0 auto;
+  background: white;
+  position: relative;
+}
+.title_blok{
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+.title{
+  padding: 52px;
+}
+.title_info, .author{
+  color: #777777;
+  font-family:'ProximaNovaRegular', sans-serif;
+  font-size: 14px;
+  letter-spacing: 5px;
+}
+.title_book{
+  background: black;
+  color: white;
+  width: 880px;
+  height: 190px;
+  position: absolute;
+  top:-100px;
+  right: -100px;
+}
+.nav{
+  margin-left: 100px;
+  height: 75px;
+  background: #f2b92b;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.line_title{
+  width: 100%;
+  height: 1px;
+  background: white;
+}
+.book_wrapper{
+  padding-top: 200px;
+  margin-left: 70px;
+  margin-right: 100px;
+  padding-left: 60px;
+  border-left: 1px solid gray;
+}
+.author{
+  display: block;
+  margin-bottom: 50px;
+}
+.title_text{
+  font-family:'futura_pt_heavy', sans-serif;
+  font-size: 52px;
+}
+.title_text_info{
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 55px;
+  font-size: 24px;
+}
+.title_text_info{
+  font-family:'georgiaitalic',sans-serif;
+  color: #8f8f8f;
+}
+.text_info_contain{
+  font-family:'GeorgiaRegularfont',sans-serif;
+  font-size: 20px;
+}
