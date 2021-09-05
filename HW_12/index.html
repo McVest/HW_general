@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css">
+    <title>FigmaForm</title>
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+      <div class="navigation">
+        <nav>
+          <a href="https://mcvest.github.io/HW_general/" class="navigation__link">Go home</a>
+        </nav>
+      </div>
+    </header>
+    <!-- form -->
+    <div class="contact-us">
+      <div class="contact-us__wrapper">
+          <h2 class="contact-us__title">Contact Us</h2>
+        <form class="contact-us__form" action="form">
+          <!--!field name -->
+          <label  class="contact-us__item">
+              <div class="contact-us__item__title">Full Name</div>
+              <input class="form-item" maxlength="40" name="text" placeholder="Ram Kaji" type="text" />
+          </label>
+          <!--! email -->
+          <label class="contact-us__item">
+                <div class="contact-us__item__title">Your Email Address</div>
+                <input class="form-item" id="email" placeholder="hello@lastdoor.store" type="email" />
+          </label>
+          <!-- !textarea -->
+          <label class="contact-us__item">
+                <div class="contact-us__item__title">Your Message</div>
+              <textarea class="form-item" name="text" placeholder="Type your message here..." id="message" cols="30" rows="10"></textarea>
+          </label>
+        </form>
+        <!-- btn -->
+        <div class="btn">
+            <button>Submit Your Message</button>
+        </div>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+      <div class="copyright">
+        <div class="copyright__wrapper">
+          <h5 class="copyright__text">
+            Copyright © 2018 LastDoor.Store
+          </h5>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
