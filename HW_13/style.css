@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: lightblue;
+}
+
+.svg__wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.svg__img {
+  width: 100px;
+  height: 100px;
+}
+.header__wrapper{
+  margin: 40px;
+}
+.footer__wrapper{
+  margin: 40px;
+}
+.navigation{
+  display: flex;
+  justify-content: center;
+}
+.navigation__link{
+  list-style-type: none;
+  color: #000;
+  text-decoration: none;
+}
+.navigation__link a{
+  color: #000;
+  text-decoration: none;
+  font-size: 48px;
+
+}
