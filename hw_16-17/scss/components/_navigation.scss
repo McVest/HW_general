@@ -1,0 +1,105 @@
+.navigation {
+  
+  &__menu {
+    justify-content: space-between;
+    position:absolute;
+    left: calc(50% - 290px);
+    align-items: center;
+    display: flex;
+    min-height: 100px;
+    max-width: 580px;
+    width: 100%;
+    margin: 0 auto;
+   
+    @include media("<=tablet") {
+      display: flex;
+      text-align: center;
+      flex-direction: column;
+      background: $c-white;
+      border-radius: 0px 0px 50px 50px;
+      position: absolute;
+      top: -500px;
+      max-width: 768px;
+      left: 0;
+      z-index: 8;
+    }
+    &__toggle {
+      opacity: 0;
+      position: absolute;
+      &:checked ~ .navigation__menu__btn > span {
+        transform: rotate(45deg);
+        transition: .5s;
+      }
+      &:checked ~ .navigation__menu__btn > span::before {
+        top: 0;
+        transform: rotate(0);
+        transition: .5s;
+        background-color: $c-black;
+      }
+      &:checked ~ .navigation__menu__btn > span::after {
+        top: 0;
+        transform: rotate(90deg);
+        transition: .5s;
+        background-color: $c-black;
+      }
+      &:checked ~ .navigation-block>.navigation__menu{
+        top: 0px;
+        transition: .5s;
+      }
+    }
+    &__btn {
+      display: none; /* используем flex для центрирования содержимого */
+      align-items: center; /* центрируем содержимое кнопки */
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      width: 30px;
+      height: 30px;
+      cursor: pointer;
+      z-index: 9;
+      @include media("<=tablet") {
+        display: flex;
+        
+      }
+      & > span,
+      span::before,
+      span::after {
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 4px;
+        border-radius: 4px;
+        background-color: $c-white;
+        z-index: 99;
+      }
+      &> span::before {
+        content: '';
+        top: -8px;
+      }
+      & > span::after {
+        content: '';
+        top: 8px;
+      }
+    }
+    @media (max-width: 580px) {
+      left: 0;
+    }
+  }
+  &__item {
+    list-style: none;
+    & > .link {
+      &:focus {
+        border-bottom: 2px solid $c-white;
+      }
+      @include media("<=tablet") {
+        color: $c-black;
+        &:focus {
+          border-bottom: 2px solid $c-black;
+        }
+      }
+    }
+    @include media("<=tablet") {
+      padding: 20px 0;
+    }
+  }
+}

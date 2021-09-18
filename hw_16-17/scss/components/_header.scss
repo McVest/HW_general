@@ -1,0 +1,11 @@
+.header {
+  &__wrapper {
+    position: relative;
+  }
+  &__bg{
+    height: 900px;
+    background: url(../../assets/icons/bg.png) no-repeat top center;
+    background-size: 100%;
+    background-size: cover;
+  }
+}
