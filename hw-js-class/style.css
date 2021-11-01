@@ -1,0 +1,168 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    justify-content: space-evenly;
+  }
+  
+  .wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 60%;
+  }
+  
+  .infBlock {
+    position: relative;
+    width: 260px;
+    height: 500px;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 5px rgba(0,0,0,.2);
+    overflow: hidden;
+    margin: 10px 0;
+  }
+  
+  .infBlock:before {
+    content: '';
+    position: absolute;
+    height: 400px;
+    width: 250px;
+    border-radius: 50px;
+    transform: rotate(45deg);
+    background: linear-gradient(-90deg, #785ad6, #4aabce);
+    top: -40%;
+    left: 40%;
+    z-index: -10;
+  }
+  
+  .infBlock:first-child:before {
+    background: linear-gradient(-90deg, #3fcee1, #3fe9bd);
+  }
+  
+  .infBlock:last-child:before {
+    background: linear-gradient(-90deg, #f1bd2b, #ee9738);
+  }
+  
+  .title {
+    color: #fff;
+    text-align: center;
+    position: relative;
+    top: 30px;
+    margin: 0;
+    font-size: 25px;
+    font-family: monospace;
+  }
+  
+  .textInform {
+    position: absolute;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #545353;
+  }
+  .textInform3 {
+    position: absolute;
+    left: 50%;
+    bottom: 15%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #545353;
+  }
+  .textInform2 {
+    position: absolute;
+    left: 50%;
+    top:55%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    height: 100px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #545353;
+    overflow: auto;
+  }
+  
+  #js-btn-1 {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
+    background-size: 200%;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  #js-btn-2 {
+    position: absolute;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
+    background-size: 200%;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  #js-btn-3 {
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
+    background-size: 200%;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  #js-btn-4 {
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background: linear-gradient(to left, #785ad6, #4aabce, #785ad6);
+    background-size: 200%;
+    padding: 12px 30px;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: .4s;
+  }
+  
+  .infBlock:first-child .btn {
+    background: linear-gradient(to left, #3fcee1, #3fe9bd, #3fcee1);
+    background-size: 200%;
+  }
+  
+  .infBlock:last-child .btn {
+    background: linear-gradient(to left, #ee9738, #f1bd2b, #ee9738);
+    background-size: 200%;
+  }
+  
+  .js-btn-1:hover,.js-btn-2:hover,.js-btn-3:hover,
+  .infBlock:first-child .btn:hover,
+  .infBlock:last-child .btn:hover {
+    background-position: right;
+  }
